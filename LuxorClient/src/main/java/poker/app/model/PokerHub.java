@@ -38,7 +38,7 @@ public class PokerHub extends Hub {
 
 	protected void playerConnected(int playerID) {
 
-		if (playerID == 2) {
+		if (playerID == 4) {
 			shutdownServerSocket();
 		}
 	}
@@ -164,6 +164,8 @@ public class PokerHub extends Hub {
 			case Deal:
 
 				break;
+			case Draw:
+				break;
 			}
 		}
 
@@ -193,5 +195,5 @@ public class PokerHub extends Hub {
 		}
 
 	}
-
+	
 }
